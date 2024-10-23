@@ -14,9 +14,9 @@ B = b;
 C = [1, c];
 
 % noise parameter
-std_e = 0.5; % standard deviation of e(t)
+std_e = 0.5;
 mean_e = 0;
-seed_e = 12;
+seed_e = 6;
 
-P0 = 100;
-theta0 = 0;
+P0 = 100 * eye(2);
+theta0 = zeros(2,1);
