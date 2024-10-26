@@ -27,9 +27,9 @@ P0 = 100 * eye(3);
 theta0 = zeros(3,1);
 %% Simulation
 % input_type: {(1, 'unit pulse'), (2, 'periodic pulse')}
-input_type = 1;
+input_type = 2;
 % regressor_type: {(1, 'rls'), (2, 'els')}
-regressor_type = 1;
+regressor_type = 2;
 data = sim("recursive_estimation.slx");
 %% Plot
 line_width = 3;
