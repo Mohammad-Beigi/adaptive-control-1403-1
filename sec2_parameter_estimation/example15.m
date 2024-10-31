@@ -38,10 +38,11 @@ for i = 1:4
     subplot(2,2,i)
     plot(S.theta.Time, S.theta.Data(:,1), 'b', 'LineWidth', line_width)
     hold on
-    plot([start_time, stop_time], [a, a], 'k--', 'LineWidth', 2)
+    plot([start_time, stop_time/2, stop_time/2 stop_time], [a, a, -a, -a], 'b--', 'LineWidth', 2)
     plot(S.theta.Time, S.theta.Data(:,2), 'r', 'LineWidth', line_width)
-    plot([start_time, stop_time], [b, b], 'k--', 'LineWidth', 2)
+    plot([start_time, stop_time], [b, b], 'r--', 'LineWidth', 2)
     hold off
     grid on
     title(['lambda = ', num2str(lambda)])
+    legend({'$\hat{a}$','$a$','$\hat{b}$','$b$'},'Interpreter','latex')
 end
