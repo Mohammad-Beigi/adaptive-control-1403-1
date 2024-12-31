@@ -3,7 +3,7 @@ clear, clc
 
 %% Model Settings > Solver
 start_time = 0;
-stop_time = 5000;
+stop_time = 1000;
 sample_time = 1;
 
 %% Parameter
